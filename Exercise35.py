@@ -33,7 +33,7 @@ def grid4x4(f,n):
     do_four(cellBlock,n)
     topBord(n)
 
-    
+
 #Number of cells is n-1 as n signifies the number of corners (+ signs). It was
 # done this way because in def topBord(n), simply using x*n would create
 # a remainder of 4 dashes without a + terminating them. If taken in the reverse,
@@ -42,6 +42,7 @@ def grid4x4(f,n):
 grid4x4(cellBlock,5)  #4x4
 grid2x2(cellBlock,3)  #2x2
 
+wait_for_user()
 #With some knowledge of user input, this could be easily used to create an
 # arbitrary nxn sized grid. Would also probably need something similar to a
 # while function to get an arbitrary sized do_n(f,s);
