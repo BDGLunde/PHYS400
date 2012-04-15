@@ -8,14 +8,14 @@ def kochCurve(t,length):
     angle = 60
     if length < 3:
         fd(t,length)
-    else:
-        kochCurve(t,length/3.0)
-        lt(t,angle)
-        kochCurve(t,length/3.0)
-        rt(t,angle*2)
-        kochCurve(t,length/3.0)
-        lt(t,angle)
-        kochCurve(t,length/3.0)
+        return
+    kochCurve(t,length/3.0)
+    lt(t,angle)
+    kochCurve(t,length/3.0)
+    rt(t,angle*2)
+    kochCurve(t,length/3.0)
+    lt(t,angle)
+    kochCurve(t,length/3.0)
 
 def snowflake(t,length):
     """Draws three kochCurves such that they outline a snowflake"""
