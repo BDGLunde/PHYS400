@@ -19,23 +19,19 @@ civic = 'civic'
 #print middle(civic)
 
 
-
-
 def is_palindrome(word):
-    """Takes a word as input and checks if it is a palindrome.
-    """
-    if len(word) == 1:
+    if len(word)==1:
         return True
     
-    if len(word)==2:              #For words with an even number of letters
-        if first(word) == last(word):
+    if len(word)==2:
+        if first(word)==last(word):
             return True
         else:
             return False
-
-    if is_palindrome(middle(word)) and first(word)==last(word):
+        
+    if first(word)==last(word) and is_palindrome(middle(word)):
         return True
     else:
         return False
-                
-print is_palindrome('radar')
+    
+print is_palindrome('giants')
